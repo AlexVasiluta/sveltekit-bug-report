@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+	</head>
+	<body>
+		<div>
+
+
+<h1>500</h1>
+
+<pre>Cannot read properties of null (reading &#39;startsWith&#39;)</pre>
+
+
+
+
+<pre>TypeError: Cannot read properties of null (reading &#39;startsWith&#39;)
+    at Request.formData (file:///home/alexv/src/bug-report/node_modules/@sveltejs/kit/dist/install-fetch.js:4832:10)
+    at post (/home/alexv/src/bug-report/src/routes/formData.js:3:28)
+    at render_endpoint (file:///home/alexv/src/bug-report/.svelte-kit/runtime/server/index.js:171:25)
+    at resolve (file:///home/alexv/src/bug-report/.svelte-kit/runtime/server/index.js:3305:17)
+    at async respond (file:///home/alexv/src/bug-report/.svelte-kit/runtime/server/index.js:3250:20)
+    at async file:///home/alexv/src/bug-report/node_modules/@sveltejs/kit/dist/chunks/index.js:294:24</pre>
+
+
+		<script type="module" data-sveltekit-hydrate="evymno">
+		import { start } from "/@fs/home/alexv/src/bug-report/.svelte-kit/runtime/client/start.js";
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="evymno"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 500,
+				error: {name:"TypeError",message:"Cannot read properties of null (reading 'startsWith')",stack:"TypeError: Cannot read properties of null (reading 'startsWith')\n    at Request.formData (file:\u002F\u002F\u002Fhome\u002Falexv\u002Fsrc\u002Fbug-report\u002Fnode_modules\u002F@sveltejs\u002Fkit\u002Fdist\u002Finstall-fetch.js:4832:10)\n    at post (\u002Fhome\u002Falexv\u002Fsrc\u002Fbug-report\u002Fsrc\u002Froutes\u002FformData.js:3:28)\n    at render_endpoint (file:\u002F\u002F\u002Fhome\u002Falexv\u002Fsrc\u002Fbug-report\u002F.svelte-kit\u002Fruntime\u002Fserver\u002Findex.js:171:25)\n    at resolve (file:\u002F\u002F\u002Fhome\u002Falexv\u002Fsrc\u002Fbug-report\u002F.svelte-kit\u002Fruntime\u002Fserver\u002Findex.js:3305:17)\n    at async respond (file:\u002F\u002F\u002Fhome\u002Falexv\u002Fsrc\u002Fbug-report\u002F.svelte-kit\u002Fruntime\u002Fserver\u002Findex.js:3250:20)\n    at async file:\u002F\u002F\u002Fhome\u002Falexv\u002Fsrc\u002Fbug-report\u002Fnode_modules\u002F@sveltejs\u002Fkit\u002Fdist\u002Fchunks\u002Findex.js:294:24"},
+				nodes: [
+					import("/.svelte-kit/runtime/components/layout.svelte"),
+						import("/.svelte-kit/runtime/components/error.svelte")
+				],
+				params: {},
+				routeId: "formData"
+			}
+		});
+	</script></div>
+	</body>
+</html>

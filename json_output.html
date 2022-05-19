@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+	</head>
+	<body>
+		<div>
+
+
+<h1>500</h1>
+
+<pre>Unexpected end of JSON input</pre>
+
+
+
+
+<pre>SyntaxError: Unexpected end of JSON input
+    at JSON.parse (&lt;anonymous&gt;)
+    at Request.json (file:///home/alexv/src/bug-report/node_modules/@sveltejs/kit/dist/install-fetch.js:4868:15)
+    at async post (/home/alexv/src/bug-report/src/routes/json.js:3:14)
+    at async render_endpoint (file:///home/alexv/src/bug-report/.svelte-kit/runtime/server/index.js:171:19)
+    at async resolve (file:///home/alexv/src/bug-report/.svelte-kit/runtime/server/index.js:3305:11)
+    at async respond (file:///home/alexv/src/bug-report/.svelte-kit/runtime/server/index.js:3250:20)
+    at async file:///home/alexv/src/bug-report/node_modules/@sveltejs/kit/dist/chunks/index.js:294:24</pre>
+
+
+		<script type="module" data-sveltekit-hydrate="1uz5ngq">
+		import { start } from "/@fs/home/alexv/src/bug-report/.svelte-kit/runtime/client/start.js";
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="1uz5ngq"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 500,
+				error: {name:"SyntaxError",message:"Unexpected end of JSON input",stack:"SyntaxError: Unexpected end of JSON input\n    at JSON.parse (\u003Canonymous\u003E)\n    at Request.json (file:\u002F\u002F\u002Fhome\u002Falexv\u002Fsrc\u002Fbug-report\u002Fnode_modules\u002F@sveltejs\u002Fkit\u002Fdist\u002Finstall-fetch.js:4868:15)\n    at async post (\u002Fhome\u002Falexv\u002Fsrc\u002Fbug-report\u002Fsrc\u002Froutes\u002Fjson.js:3:14)\n    at async render_endpoint (file:\u002F\u002F\u002Fhome\u002Falexv\u002Fsrc\u002Fbug-report\u002F.svelte-kit\u002Fruntime\u002Fserver\u002Findex.js:171:19)\n    at async resolve (file:\u002F\u002F\u002Fhome\u002Falexv\u002Fsrc\u002Fbug-report\u002F.svelte-kit\u002Fruntime\u002Fserver\u002Findex.js:3305:11)\n    at async respond (file:\u002F\u002F\u002Fhome\u002Falexv\u002Fsrc\u002Fbug-report\u002F.svelte-kit\u002Fruntime\u002Fserver\u002Findex.js:3250:20)\n    at async file:\u002F\u002F\u002Fhome\u002Falexv\u002Fsrc\u002Fbug-report\u002Fnode_modules\u002F@sveltejs\u002Fkit\u002Fdist\u002Fchunks\u002Findex.js:294:24"},
+				nodes: [
+					import("/.svelte-kit/runtime/components/layout.svelte"),
+						import("/.svelte-kit/runtime/components/error.svelte")
+				],
+				params: {},
+				routeId: "json"
+			}
+		});
+	</script></div>
+	</body>
+</html>
